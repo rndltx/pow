@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Narrow Jumbotron Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../css/editor.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="narrow-jumbotron.css" rel="stylesheet">
-  </head>
-
+<html>
   <body>
     <h1>Hai Patma Cantik!</h1>
-    <a href="https://imgkub.com/image/gNB2n"><img src="https://imgkub.com/images/2022/03/06/DSC_0015.md.jpg" alt="DSC_0015.md.jpg" border="0"> 
+    <a 
+       href="https://imgkub.com/image/gNB2n"><img src="https://imgkub.com/images/2022/03/06/DSC_0015.md.jpg" alt="DSC_0015.md.jpg" border="0"> 
     </a>
     <h1>Maukah kamu menjadi Pendampingku?</h1>
     <button id="btn_mau" onclick="alert('I LOVE YOU')">Mau</button>&nbsp;
@@ -25,4 +10,13 @@
       Gamau
     </button>
   </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
 </html>
